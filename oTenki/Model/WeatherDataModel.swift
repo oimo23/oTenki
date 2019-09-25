@@ -18,6 +18,7 @@ final class WeatherDataModel {
     
     // 天気情報を更新する
     func updateWeatherData(json: JSON) {
+        
         // 温度（ただし華氏温度なので変換を挟む）
         let temperature = json["main"]["temp"].doubleValue
         self.temperature = Int(temperature - 273.15)
@@ -30,6 +31,7 @@ final class WeatherDataModel {
         
         // 上記のconditionをもとにアイコンを決定する
         self.weatherIconName = self.updateWeatherIcon(condition: self.condition)
+        
     }
     
     // アイコンを天気conditionの数値に応じて更新する
@@ -75,4 +77,5 @@ final class WeatherDataModel {
         }
         
     }
+    
 }

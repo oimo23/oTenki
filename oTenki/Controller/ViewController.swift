@@ -19,12 +19,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var temperature: UILabel!
     
     // MARK: - インスタンス化
-    let constants = Constants() // APIのURL、APIKEYなどの定数、 gitでは管理しないので各自用意
+    let constants = Constants() // APIのURL、 APIKEYなどの定数、 gitでは管理しないので各自用意
     let weatherDataModel = WeatherDataModel() // 天気のDataModel
     let locationManager = CLLocationManager() // 位置情報を扱う
     
     // MARK: - Viewがロードされた
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         // locationManager設定、100キロ精度を使用
@@ -34,6 +35,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // 使用許可の認証をポップアップする
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
     }
     
     //MARK: - APIとの通信
@@ -56,6 +58,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             } else {
                 self.cityName.text = "通信に失敗しました"
             }
+            
         }
     }
     
@@ -74,9 +77,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //MARK: - UI描画
     /***************************************************************/
     func updateWeatherUI() {
+        
         cityName.text = weatherDataModel.city
         temperature.text = "\(weatherDataModel.temperature)C°"
         weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
+        
     }
     
     //MARK: - ロケーションから緯度経度を取得し、getWetherDataを発動する関数
@@ -90,6 +95,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // 精度が1以上なら緯度経度を確定する
         if location.horizontalAccuracy > 0 {
+            
             // 位置情報の更新をやめる
             self.locationManager.stopUpdatingLocation()
             
