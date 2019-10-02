@@ -22,6 +22,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let constants = Constants() // APIのURL、 APIKEYなどの定数、 gitでは管理しないので各自用意
     let weatherDataModel = WeatherDataModel() // 天気のDataModel
     let locationManager = CLLocationManager() // 位置情報を扱う
+    let apiClient = APIClient() // APIリクエスト用
     
     // MARK: - Viewがロードされた
     override func viewDidLoad() {
@@ -42,24 +43,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     /***************************************************************/
     func getWeatherDataFromAPI(url: String, parameters: [String: String]) {
         
-        // 引数のurlに対して、parametersを持たせてgetリクエストをする
-        Alamofire.request(url, method: .get, parameters: parameters).responseJSON {
-            response in
-            
-            // 通信に成功したなら天気情報の更新へ
-            if response.result.isSuccess {
-                
-                // SwftyJSONによって、JSON型を指定出来るようになっている
-                let weatherJSON: JSON = JSON(response.result.value!)
-                
-                self.updateWeatherData(json: weatherJSON)
-            
-            // 失敗ならエラーを知らせる
-            } else {
-                self.cityName.text = "通信に失敗しました"
-            }
-            
-        }
+        self.apiClient.request(method: .get, url: url, parameters: parameters)
+        
+        guard let weatherJSON: JSON = self.apiClient.payload else { return }
+        
+        self.updateWeatherData(json: weatherJSON)
+        
     }
     
     //MARK: - 天気情報の更新
