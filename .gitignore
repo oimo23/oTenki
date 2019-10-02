@@ -23,6 +23,8 @@ Pods/*
 *.swp
 !.gitkeep
 .DS_Store
+!*.xcodeproj/xcshareddata
+!*.xcworkspace/xcshareddata
 
 # secrets
 Constants.swift

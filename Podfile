@@ -11,3 +11,8 @@ target 'oTenki' do
   # Pods for oTenki
 
 end
+
+target 'oTenkiTests' do
+  inherit! :search_paths
+  pod 'SwiftyJSON'
+end 
