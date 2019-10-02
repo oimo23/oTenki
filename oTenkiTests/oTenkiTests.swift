@@ -7,6 +7,9 @@
 //
 
 import XCTest
+import SwiftyJSON
+
+@testable import oTenki
 
 class oTenkiTests: XCTestCase {
 
@@ -18,9 +21,19 @@ class oTenkiTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testWeatherDataModel() {
+        
+        let weatherDatamodel = WeatherDataModel()
+        
+        let testBundle = Bundle(for: type(of: self))
+        let path = testBundle.url(forResource: "stub", withExtension: "json")
+        let stubData: NSData? = try? NSData(contentsOf: path!, options: .uncached)
+        
+        weatherDatamodel.updateWeatherData(json: JSON(stubData!))
+        
+        XCTAssertEqual(weatherDatamodel.city, "Tawarano")
+        XCTAssertEqual(weatherDatamodel.weatherIconName, "sunny")
+        
     }
 
     func testPerformanceExample() {
