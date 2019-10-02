@@ -11,6 +11,7 @@
 		8723DC4FDB150238E35EC473 /* libPods-oTenkiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BE61AF7E1E57A472D814ED /* libPods-oTenkiTests.a */; };
 		C3CC86162344FAA5002B066A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CC86152344FAA5002B066A /* APIClient.swift */; };
 		C3CC8618234511F9002B066A /* ConstantsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CC8617234511F9002B066A /* ConstantsSample.swift */; };
+		C3CC861C234513F5002B066A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CC861B234513F5002B066A /* R.generated.swift */; };
 		C3E1A53323373E9C00FC4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */; };
 		C3E1A53523373E9C00FC4BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A53423373E9C00FC4BD7 /* ViewController.swift */; };
 		C3E1A53823373E9C00FC4BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E1A53623373E9C00FC4BD7 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		A05CE9926F92A06F978AE34C /* Pods-oTenkiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oTenkiTests.release.xcconfig"; path = "Target Support Files/Pods-oTenkiTests/Pods-oTenkiTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3CC86152344FAA5002B066A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		C3CC8617234511F9002B066A /* ConstantsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsSample.swift; sourceTree = "<group>"; };
+		C3CC861B234513F5002B066A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C3E1A52F23373E9C00FC4BD7 /* oTenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oTenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E1A53423373E9C00FC4BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				C3E1A54423373EDF00FC4BD7 /* Model */,
 				C3E1A53923373E9D00FC4BD7 /* Assets.xcassets */,
 				C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */,
+				C3CC861B234513F5002B066A /* R.generated.swift */,
 				C3E1A53B23373E9D00FC4BD7 /* LaunchScreen.storyboard */,
 				C3E1A53E23373E9E00FC4BD7 /* Info.plist */,
 			);
@@ -208,6 +211,7 @@
 				C3E1A52C23373E9C00FC4BD7 /* Frameworks */,
 				C3E1A52D23373E9C00FC4BD7 /* Resources */,
 				E9B29A3DC8E88E60F2E7FEB1 /* [CP] Embed Pods Frameworks */,
+				C3CC861A23451393002B066A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -349,6 +353,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C3CC861A23451393002B066A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		E9B29A3DC8E88E60F2E7FEB1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E1A53523373E9C00FC4BD7 /* ViewController.swift in Sources */,
+				C3CC861C234513F5002B066A /* R.generated.swift in Sources */,
 				C3CC8618234511F9002B066A /* ConstantsSample.swift in Sources */,
 				C3E1A53323373E9C00FC4BD7 /* AppDelegate.swift in Sources */,
 				C3E1A54823373F1D00FC4BD7 /* WeatherDataModel.swift in Sources */,
