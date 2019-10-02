@@ -10,6 +10,7 @@
 		0BB7E358ED0E749C4DC8D54E /* Pods_oTenki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E777E97592106871EDDA3A88 /* Pods_oTenki.framework */; };
 		8723DC4FDB150238E35EC473 /* libPods-oTenkiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BE61AF7E1E57A472D814ED /* libPods-oTenkiTests.a */; };
 		C3CC86162344FAA5002B066A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CC86152344FAA5002B066A /* APIClient.swift */; };
+		C3CC8618234511F9002B066A /* ConstantsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CC8617234511F9002B066A /* ConstantsSample.swift */; };
 		C3E1A53323373E9C00FC4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */; };
 		C3E1A53523373E9C00FC4BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A53423373E9C00FC4BD7 /* ViewController.swift */; };
 		C3E1A53823373E9C00FC4BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E1A53623373E9C00FC4BD7 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		98BE61AF7E1E57A472D814ED /* libPods-oTenkiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oTenkiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05CE9926F92A06F978AE34C /* Pods-oTenkiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oTenkiTests.release.xcconfig"; path = "Target Support Files/Pods-oTenkiTests/Pods-oTenkiTests.release.xcconfig"; sourceTree = "<group>"; };
 		C3CC86152344FAA5002B066A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C3CC8617234511F9002B066A /* ConstantsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsSample.swift; sourceTree = "<group>"; };
 		C3E1A52F23373E9C00FC4BD7 /* oTenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oTenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E1A53423373E9C00FC4BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				C3E1A54723373F1D00FC4BD7 /* WeatherDataModel.swift */,
 				C3E1A54B2337405A00FC4BD7 /* Constants.swift */,
 				C3CC86152344FAA5002B066A /* APIClient.swift */,
+				C3CC8617234511F9002B066A /* ConstantsSample.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3E1A53523373E9C00FC4BD7 /* ViewController.swift in Sources */,
+				C3CC8618234511F9002B066A /* ConstantsSample.swift in Sources */,
 				C3E1A53323373E9C00FC4BD7 /* AppDelegate.swift in Sources */,
 				C3E1A54823373F1D00FC4BD7 /* WeatherDataModel.swift in Sources */,
 				C3CC86162344FAA5002B066A /* APIClient.swift in Sources */,
