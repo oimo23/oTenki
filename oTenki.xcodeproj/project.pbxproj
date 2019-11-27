@@ -207,11 +207,12 @@
 			buildConfigurationList = C3E1A54123373E9E00FC4BD7 /* Build configuration list for PBXNativeTarget "oTenki" */;
 			buildPhases = (
 				F2703C0A1DAB02C8B459C8E5 /* [CP] Check Pods Manifest.lock */,
+				C3CC861A23451393002B066A /* ShellScript */,
 				C3E1A52B23373E9C00FC4BD7 /* Sources */,
 				C3E1A52C23373E9C00FC4BD7 /* Frameworks */,
 				C3E1A52D23373E9C00FC4BD7 /* Resources */,
 				E9B29A3DC8E88E60F2E7FEB1 /* [CP] Embed Pods Frameworks */,
-				C3CC861A23451393002B066A /* ShellScript */,
+				C3CC861D23451A65002B066A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -371,6 +372,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		C3CC861D23451A65002B066A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect --format\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		E9B29A3DC8E88E60F2E7FEB1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -22,18 +22,18 @@ class oTenkiTests: XCTestCase {
     }
 
     func testWeatherDataModel() {
-        
+
         let weatherDatamodel = WeatherDataModel()
-        
+
         let testBundle = Bundle(for: type(of: self))
         let path = testBundle.url(forResource: "stub", withExtension: "json")
         let stubData: NSData? = try? NSData(contentsOf: path!, options: .uncached)
-        
+
         weatherDatamodel.updateWeatherData(json: JSON(stubData!))
-        
+
         XCTAssertEqual(weatherDatamodel.city, "Tawarano")
         XCTAssertEqual(weatherDatamodel.weatherIconName, "sunny")
-        
+
     }
 
     func testPerformanceExample() {
