@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB7E358ED0E749C4DC8D54E /* Pods_oTenki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E777E97592106871EDDA3A88 /* Pods_oTenki.framework */; };
+		1162D86F15781275B5D5B14E /* libPods-oTenkiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2478D77C22F363CA03F061 /* libPods-oTenkiTests.a */; };
+		C39FAADA2390143900557406 /* ConstantsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39FAAD92390143900557406 /* ConstantsSample.swift */; };
+		C3E1A53323373E9C00FC4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */; };
+		C3E1A53523373E9C00FC4BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A53423373E9C00FC4BD7 /* ViewController.swift */; };
+		C3E1A53823373E9C00FC4BD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E1A53623373E9C00FC4BD7 /* Main.storyboard */; };
+		C3E1A53A23373E9D00FC4BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E1A53923373E9D00FC4BD7 /* Assets.xcassets */; };
+		C3E1A53D23373E9D00FC4BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E1A53B23373E9D00FC4BD7 /* LaunchScreen.storyboard */; };
+		C3E1A54823373F1D00FC4BD7 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A54723373F1D00FC4BD7 /* WeatherDataModel.swift */; };
+		C3E1A54C2337405A00FC4BD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A54B2337405A00FC4BD7 /* Constants.swift */; };
+		C3E1A58E23375D8300FC4BD7 /* oTenkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A58D23375D8300FC4BD7 /* oTenkiTests.swift */; };
+		C3E1A59C23375D9200FC4BD7 /* oTenkiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E1A59B23375D9200FC4BD7 /* oTenkiUITests.swift */; };
+		C3E436C1233E6F6300279277 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E436C0233E6F6300279277 /* WeatherPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3E1A59023375D8300FC4BD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E1A52723373E9C00FC4BD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E1A52E23373E9C00FC4BD7;
+			remoteInfo = oTenki;
+		};
+		C3E1A59E23375D9200FC4BD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E1A52723373E9C00FC4BD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E1A52E23373E9C00FC4BD7;
+			remoteInfo = oTenki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0317395C322DD0AD145D3F4D /* Pods-oTenki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oTenki.debug.xcconfig"; path = "Target Support Files/Pods-oTenki/Pods-oTenki.debug.xcconfig"; sourceTree = "<group>"; };
+		33FC0D69B713188B4CBF3031 /* Pods-oTenki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oTenki.release.xcconfig"; path = "Target Support Files/Pods-oTenki/Pods-oTenki.release.xcconfig"; sourceTree = "<group>"; };
+		5D92ED8EC95D9A60BE1E8879 /* Pods-oTenkiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oTenkiTests.release.xcconfig"; path = "Target Support Files/Pods-oTenkiTests/Pods-oTenkiTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC50D5B703F99726142417CF /* Pods-oTenkiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oTenkiTests.debug.xcconfig"; path = "Target Support Files/Pods-oTenkiTests/Pods-oTenkiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C39FAAD92390143900557406 /* ConstantsSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsSample.swift; sourceTree = "<group>"; };
+		C3E1A52F23373E9C00FC4BD7 /* oTenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oTenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3E1A53423373E9C00FC4BD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3E1A53723373E9C00FC4BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3E1A53923373E9D00FC4BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3E1A53C23373E9D00FC4BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3E1A53E23373E9E00FC4BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E1A54723373F1D00FC4BD7 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		C3E1A54B2337405A00FC4BD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3E1A58B23375D8300FC4BD7 /* oTenkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oTenkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E1A58D23375D8300FC4BD7 /* oTenkiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oTenkiTests.swift; sourceTree = "<group>"; };
+		C3E1A58F23375D8300FC4BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E1A59923375D9200FC4BD7 /* oTenkiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oTenkiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E1A59B23375D9200FC4BD7 /* oTenkiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oTenkiUITests.swift; sourceTree = "<group>"; };
+		C3E1A59D23375D9200FC4BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E436C0233E6F6300279277 /* WeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
+		E777E97592106871EDDA3A88 /* Pods_oTenki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_oTenki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2478D77C22F363CA03F061 /* libPods-oTenkiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-oTenkiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3E1A52C23373E9C00FC4BD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB7E358ED0E749C4DC8D54E /* Pods_oTenki.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E1A58823375D8300FC4BD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1162D86F15781275B5D5B14E /* libPods-oTenkiTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E1A59623375D9200FC4BD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B64520C85031134C6AE36C9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E777E97592106871EDDA3A88 /* Pods_oTenki.framework */,
+				EF2478D77C22F363CA03F061 /* libPods-oTenkiTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3E1A52623373E9C00FC4BD7 = {
+			isa = PBXGroup;
+			children = (
+				C3E1A53123373E9C00FC4BD7 /* oTenki */,
+				C3E1A58C23375D8300FC4BD7 /* oTenkiTests */,
+				C3E1A59A23375D9200FC4BD7 /* oTenkiUITests */,
+				C3E1A53023373E9C00FC4BD7 /* Products */,
+				DDC274B3CB851D9114D14297 /* Pods */,
+				B64520C85031134C6AE36C9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3E1A53023373E9C00FC4BD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3E1A52F23373E9C00FC4BD7 /* oTenki.app */,
+				C3E1A58B23375D8300FC4BD7 /* oTenkiTests.xctest */,
+				C3E1A59923375D9200FC4BD7 /* oTenkiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3E1A53123373E9C00FC4BD7 /* oTenki */ = {
+			isa = PBXGroup;
+			children = (
+				C3E436BF233E6F2400279277 /* Presenter */,
+				C3E1A54623373EEC00FC4BD7 /* Controller */,
+				C3E1A54523373EE600FC4BD7 /* View */,
+				C3E1A54423373EDF00FC4BD7 /* Model */,
+				C3E1A53923373E9D00FC4BD7 /* Assets.xcassets */,
+				C3E1A53223373E9C00FC4BD7 /* AppDelegate.swift */,
+				C3E1A53B23373E9D00FC4BD7 /* LaunchScreen.storyboard */,
+				C3E1A53E23373E9E00FC4BD7 /* Info.plist */,
+			);
+			path = oTenki;
+			sourceTree = "<group>";
+		};
+		C3E1A54423373EDF00FC4BD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3E1A54723373F1D00FC4BD7 /* WeatherDataModel.swift */,
+				C3E1A54B2337405A00FC4BD7 /* Constants.swift */,
+				C39FAAD92390143900557406 /* ConstantsSample.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3E1A54523373EE600FC4BD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3E1A53623373E9C00FC4BD7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3E1A54623373EEC00FC4BD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3E1A53423373E9C00FC4BD7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C3E1A58C23375D8300FC4BD7 /* oTenkiTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E1A58D23375D8300FC4BD7 /* oTenkiTests.swift */,
+				C3E1A58F23375D8300FC4BD7 /* Info.plist */,
+			);
+			path = oTenkiTests;
+			sourceTree = "<group>";
+		};
+		C3E1A59A23375D9200FC4BD7 /* oTenkiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E1A59B23375D9200FC4BD7 /* oTenkiUITests.swift */,
+				C3E1A59D23375D9200FC4BD7 /* Info.plist */,
+			);
+			path = oTenkiUITests;
+			sourceTree = "<group>";
+		};
+		C3E436BF233E6F2400279277 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C3E436C0233E6F6300279277 /* WeatherPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DDC274B3CB851D9114D14297 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0317395C322DD0AD145D3F4D /* Pods-oTenki.debug.xcconfig */,
+				33FC0D69B713188B4CBF3031 /* Pods-oTenki.release.xcconfig */,
+				AC50D5B703F99726142417CF /* Pods-oTenkiTests.debug.xcconfig */,
+				5D92ED8EC95D9A60BE1E8879 /* Pods-oTenkiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3E1A52E23373E9C00FC4BD7 /* oTenki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E1A54123373E9E00FC4BD7 /* Build configuration list for PBXNativeTarget "oTenki" */;
+			buildPhases = (
+				F2703C0A1DAB02C8B459C8E5 /* [CP] Check Pods Manifest.lock */,
+				C3E1A52B23373E9C00FC4BD7 /* Sources */,
+				C3E1A52C23373E9C00FC4BD7 /* Frameworks */,
+				C3E1A52D23373E9C00FC4BD7 /* Resources */,
+				E9B29A3DC8E88E60F2E7FEB1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oTenki;
+			productName = oTenki;
+			productReference = C3E1A52F23373E9C00FC4BD7 /* oTenki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3E1A58A23375D8300FC4BD7 /* oTenkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E1A59423375D8300FC4BD7 /* Build configuration list for PBXNativeTarget "oTenkiTests" */;
+			buildPhases = (
+				F6A500A0D7475C5DC37AA3AA /* [CP] Check Pods Manifest.lock */,
+				C3E1A58723375D8300FC4BD7 /* Sources */,
+				C3E1A58823375D8300FC4BD7 /* Frameworks */,
+				C3E1A58923375D8300FC4BD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E1A59123375D8300FC4BD7 /* PBXTargetDependency */,
+			);
+			name = oTenkiTests;
+			productName = oTenkiTests;
+			productReference = C3E1A58B23375D8300FC4BD7 /* oTenkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3E1A59823375D9200FC4BD7 /* oTenkiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E1A5A023375D9200FC4BD7 /* Build configuration list for PBXNativeTarget "oTenkiUITests" */;
+			buildPhases = (
+				C3E1A59523375D9200FC4BD7 /* Sources */,
+				C3E1A59623375D9200FC4BD7 /* Frameworks */,
+				C3E1A59723375D9200FC4BD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E1A59F23375D9200FC4BD7 /* PBXTargetDependency */,
+			);
+			name = oTenkiUITests;
+			productName = oTenkiUITests;
+			productReference = C3E1A59923375D9200FC4BD7 /* oTenkiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3E1A52723373E9C00FC4BD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "yuki fushinuki";
+				TargetAttributes = {
+					C3E1A52E23373E9C00FC4BD7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					C3E1A58A23375D8300FC4BD7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C3E1A52E23373E9C00FC4BD7;
+					};
+					C3E1A59823375D9200FC4BD7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C3E1A52E23373E9C00FC4BD7;
+					};
+				};
+			};
+			buildConfigurationList = C3E1A52A23373E9C00FC4BD7 /* Build configuration list for PBXProject "oTenki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3E1A52623373E9C00FC4BD7;
+			productRefGroup = C3E1A53023373E9C00FC4BD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3E1A52E23373E9C00FC4BD7 /* oTenki */,
+				C3E1A58A23375D8300FC4BD7 /* oTenkiTests */,
+				C3E1A59823375D9200FC4BD7 /* oTenkiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3E1A52D23373E9C00FC4BD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E1A53D23373E9D00FC4BD7 /* LaunchScreen.storyboard in Resources */,
+				C3E1A53A23373E9D00FC4BD7 /* Assets.xcassets in Resources */,
+				C3E1A53823373E9C00FC4BD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E1A58923375D8300FC4BD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E1A59723375D9200FC4BD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9B29A3DC8E88E60F2E7FEB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oTenki/Pods-oTenki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-oTenki/Pods-oTenki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-oTenki/Pods-oTenki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2703C0A1DAB02C8B459C8E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oTenki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A500A0D7475C5DC37AA3AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-oTenkiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3E1A52B23373E9C00FC4BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E436C1233E6F6300279277 /* WeatherPresenter.swift in Sources */,
+				C39FAADA2390143900557406 /* ConstantsSample.swift in Sources */,
+				C3E1A53523373E9C00FC4BD7 /* ViewController.swift in Sources */,
+				C3E1A53323373E9C00FC4BD7 /* AppDelegate.swift in Sources */,
+				C3E1A54823373F1D00FC4BD7 /* WeatherDataModel.swift in Sources */,
+				C3E1A54C2337405A00FC4BD7 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E1A58723375D8300FC4BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E1A58E23375D8300FC4BD7 /* oTenkiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E1A59523375D9200FC4BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E1A59C23375D9200FC4BD7 /* oTenkiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3E1A59123375D8300FC4BD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E1A52E23373E9C00FC4BD7 /* oTenki */;
+			targetProxy = C3E1A59023375D8300FC4BD7 /* PBXContainerItemProxy */;
+		};
+		C3E1A59F23375D9200FC4BD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E1A52E23373E9C00FC4BD7 /* oTenki */;
+			targetProxy = C3E1A59E23375D9200FC4BD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3E1A53623373E9C00FC4BD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3E1A53723373E9C00FC4BD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3E1A53B23373E9D00FC4BD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3E1A53C23373E9D00FC4BD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3E1A53F23373E9E00FC4BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3E1A54023373E9E00FC4BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3E1A54223373E9E00FC4BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0317395C322DD0AD145D3F4D /* Pods-oTenki.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 745SLXVGDN;
+				INFOPLIST_FILE = oTenki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oimo23.oTenki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C3E1A54323373E9E00FC4BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33FC0D69B713188B4CBF3031 /* Pods-oTenki.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 745SLXVGDN;
+				INFOPLIST_FILE = oTenki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oimo23.oTenki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C3E1A59223375D8300FC4BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC50D5B703F99726142417CF /* Pods-oTenkiTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 745SLXVGDN;
+				INFOPLIST_FILE = oTenkiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oimo23.oTenkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oTenki.app/oTenki";
+			};
+			name = Debug;
+		};
+		C3E1A59323375D8300FC4BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D92ED8EC95D9A60BE1E8879 /* Pods-oTenkiTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 745SLXVGDN;
+				INFOPLIST_FILE = oTenkiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oimo23.oTenkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oTenki.app/oTenki";
+			};
+			name = Release;
+		};
+		C3E1A5A123375D9200FC4BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 745SLXVGDN;
+				INFOPLIST_FILE = oTenkiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oimo23.oTenkiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = oTenki;
+			};
+			name = Debug;
+		};
+		C3E1A5A223375D9200FC4BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 745SLXVGDN;
+				INFOPLIST_FILE = oTenkiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oimo23.oTenkiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = oTenki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3E1A52A23373E9C00FC4BD7 /* Build configuration list for PBXProject "oTenki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E1A53F23373E9E00FC4BD7 /* Debug */,
+				C3E1A54023373E9E00FC4BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E1A54123373E9E00FC4BD7 /* Build configuration list for PBXNativeTarget "oTenki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E1A54223373E9E00FC4BD7 /* Debug */,
+				C3E1A54323373E9E00FC4BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E1A59423375D8300FC4BD7 /* Build configuration list for PBXNativeTarget "oTenkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E1A59223375D8300FC4BD7 /* Debug */,
+				C3E1A59323375D8300FC4BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E1A5A023375D9200FC4BD7 /* Build configuration list for PBXNativeTarget "oTenkiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E1A5A123375D9200FC4BD7 /* Debug */,
+				C3E1A5A223375D9200FC4BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3E1A52723373E9C00FC4BD7 /* Project object */;
+}
