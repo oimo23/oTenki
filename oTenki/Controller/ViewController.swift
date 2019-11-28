@@ -19,7 +19,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet private weak var temperature: UILabel!
 
     // MARK: - インスタンス化
-    let weatherDataModel = WeatherDataModel() // 天気のDataModel
+    var weatherDataModel = WeatherDataModel() // 天気のDataModel
     let locationManager = CLLocationManager() // 位置情報を扱う
     let apiClient = APIClient() // APIリクエスト用
 
@@ -35,18 +35,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // 使用許可の認証をポップアップする
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
-
-    }
-
-    // MARK: - APIとの通信
-    /***************************************************************/
-    func getWeatherDataFromAPI(url: String, parameters: [String: String]) {
-
-        self.apiClient.request(method: .get, url: url, parameters: parameters)
-
-        guard let weatherJSON: JSON = self.apiClient.payload else { return }
-
-        self.updateWeatherData(json: weatherJSON)
 
     }
 
@@ -76,9 +64,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     /***************************************************************/
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 
-        let WEATHER_URL = Constants.shared.WEATHER_URL
-        let APP_ID = Constants.shared.APP_ID
-
         let location = locations[locations.count - 1]
 
         // 精度が1以上なら緯度経度を確定する
@@ -87,13 +72,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             // 位置情報の更新をやめる
             self.locationManager.stopUpdatingLocation()
 
-            let latitude = String(location.coordinate.latitude)
-            let longitude = String(location.coordinate.longitude)
-
-            let params: [String: String] = ["lat": latitude, "lon": longitude, "appid": APP_ID]
-
             // 確定した緯度経度のパラメータを引数に、APIを叩くための関数を発動する
-            getWeatherDataFromAPI(url: WEATHER_URL, parameters: params)
+            // getWeatherDataFromAPI(url: WEATHER_URL, parameters: params)
+            self.apiClient.getWeatherData(locationCoordinate: location.coordinate) { [weak self] result in
+                switch result {
+                case .success(let weatherData):
+                    self?.weatherDataModel = weatherData
+
+                    DispatchQueue.main.async {
+                        self?.updateWeatherUI()
+                    }
+                case .failure(let error):
+                    // UIAlertControllerなどでerrorを表示
+                    break
+                }
+            }
 
         }
     }

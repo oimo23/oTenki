@@ -7,35 +7,43 @@
 //
 
 import Alamofire
+import CoreLocation
 import Foundation
-import SwiftyJSON
+
+enum APIClientError: Swift.Error {
+    case responseError(Swift.Error)
+    case requestError(Swift.Error)
+    case unknownError
+}
 
 final class APIClient {
 
-    private(set) var payload: JSON?
-    private(set) var gotError: Bool = false
-
-    func request(method: HTTPMethod, url: String, parameters: [String: String]) {
-
-        Alamofire.request(url, method: method, parameters: parameters).responseJSON { response in
-
-            // 通信に成功
-            if response.result.isSuccess {
-
-                guard let result = response.result.value else { return }
-
-                self.payload = JSON(result)
-                self.gotError = false
-
-                // 失敗
-            } else {
-
-                self.gotError = true
-
+    func getWeatherData(
+        locationCoordinate: CLLocationCoordinate2D,
+        completion: @escaping (Swift.Result<WeatherDataModel, APIClientError>) -> Void
+    ) {
+        Alamofire.request(
+            Constants.shared.WEATHER_URL,
+            method: .get,
+            parameters: [
+                "lat": String(locationCoordinate.latitude),
+                "lon": String(locationCoordinate.longitude),
+                "appid": Constants.shared.APP_ID
+            ]
+        )
+            .responseData { response in
+                switch response.result {
+                case .success(let data):
+                    do {
+                        let weatherData = try JSONDecoder().decode(WeatherDataModel.self, from: data)
+                        completion(.success(weatherData))
+                    } catch {
+                        completion(.failure(.responseError(error)))
+                    }
+                case .failure(let error):
+                    completion(.failure(.requestError(error)))
+                }
             }
-
-        }
-
     }
 
 }

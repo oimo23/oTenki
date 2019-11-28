@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-final class WeatherDataModel {
+final class WeatherDataModel: Decodable {
 
     private(set) var temperature: Int = 0
     private(set) var condition: Int = 0
