@@ -7,6 +7,7 @@ target 'oTenki' do
   pod 'SwiftLint'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'R.swift'
 
   # Pods for oTenki
 

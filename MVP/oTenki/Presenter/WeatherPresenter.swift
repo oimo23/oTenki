@@ -65,8 +65,7 @@ final class WeatherPresenter {
     private func getWeatherDataFromAPI(url: String, parameters: [String: String]) {
         
         // 引数のurlに対して、parametersを持たせてgetリクエストをする
-        Alamofire.request(url, method: .get, parameters: parameters).responseJSON {
-            response in
+        Alamofire.request(url, method: .get, parameters: parameters).responseJSON { response in
             
             // 通信に成功したなら天気情報の更新へ
             if response.result.isSuccess {
